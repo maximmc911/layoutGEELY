@@ -1,0 +1,61 @@
+.card_quote {
+    position: absolute;
+    top: 60px;
+    left: 540px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.quote_item {
+    display: flex;
+    gap: 20px;
+
+}
+
+.quote_item p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    color: rgba(34, 34, 34, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .card_quote {
+        position: absolute;
+        top: 60px;
+        left: 420px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card_quote {
+        left: 5px;
+        top: 405px;
+        flex-wrap: wrap;
+        width: 320px;
+        gap: 7px;
+        align-items: center;
+        height: 80px;
+    }
+
+    .quote_item {
+        width: 126px;
+        gap: 7px;
+    }
+
+    .quote_photo {
+        width: 24px;
+    }
+
+    .quote_item p {
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 10.8px;
+    }
+}

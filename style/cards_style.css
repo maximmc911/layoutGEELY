@@ -1,0 +1,81 @@
+@import url('./cardStyle/button_style.css');
+@import url('./cardStyle/price_style.css');
+@import url('./cardStyle/quote_style.css');
+@import url('./cardStyle/car_colors&photo_style.css');
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.catalog_card {
+    position: relative;
+    max-width: 1180px;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 6px 0px rgba(38, 46, 43, 0.15);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_bg {
+    width: 560px;
+}
+
+.card_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_image_auto {
+    position: absolute;
+    width: 300px;
+    top: 45px;
+    right: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog {
+        gap: 30px;
+    }
+
+    .catalog_card {
+        max-width: 962px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card_image_auto {
+        right: 35px;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .catalog_card {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 320px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .card_bg {
+        width: 320px;
+        height: 186px;
+    }
+
+    .card_image_auto {
+        top: 34px;
+        right: 50px;
+        width: 230px;
+    }
+
+
+}

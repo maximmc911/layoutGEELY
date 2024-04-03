@@ -1,0 +1,80 @@
+.car_colors_photo_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.car_colors {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 180px;
+}
+
+.color_item,
+.color_item_w {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.color_item_w {
+    border: 1px solid rgba(11, 11, 11, 1);
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.car_photo {
+    padding-left: 75px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.photo_item {
+    width: 67.86px;
+    height: 45px;
+}
+
+
+@media screen and (max-width: 360px) {
+    .car_colors_photo_style {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .car_photo {
+        padding-right: 15px;
+        margin-top: 13px;
+        display: flex;
+        align-items: start;
+        gap: 16px;
+        cursor: pointer;
+    }
+
+    .photo_item {
+        width: 63px;
+        height: 39px;
+    }
+
+    .car_colors {
+        width: 320px;
+        margin: 0px;
+        margin-top: 13px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .color_item,
+    .color_item_w {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
